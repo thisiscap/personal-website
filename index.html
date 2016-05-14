@@ -2,24 +2,22 @@
 layout: default
 ---
 
-<main style="padding: 1em;">
-  <h1>Hello World</h1>
-  <p>This is a website that has multiple posts in a blog type format.</p>
-  <p>Edit or add posts in the _posts/ directory</p>
-  <p>Add a new page by creating a directory with the name i.e to make the url http://localhost:3000/about/ just create a directory called about and put a new index.html file in there.</p>
+<main>
+  <h1>Helping people articulate themselves using thoughtful, insightful solutions.</h1>
 </main>
-<footer style="padding: 1em;">
+
+<div>
 {% if site.posts %}
-  <h2>A list of all the posts</h2>
-  <ul>
+  <section>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}" title="{{post.title}}">
+      <article>
+        <a href="{{post.url}}" title="{{post.title}}">
           {{ post.title }}
         </a>
-      </li>
+      </article>
     {% endfor %}
-  </ul>
+  </section>
 {% endif %}
-<small>Copyright 2015</small>
-</footer>
+</div>
+
+<section>Find out more about me or see what I can do for you or get in touch</section>
