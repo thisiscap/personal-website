@@ -1,8 +1,15 @@
-/* ==========================================================================
-   SITE STYLES
-   ========================================================================== */
+header {
+	background: white;
+	position: fixed;
+	top: 0;
+	padding: 2em 0 2em;
+	width: 100%;
+}
 
-/**
- * Add your site styles here. Break things out to additional partials if you'd like
- * and add them in import.scss
- */
+body {
+	padding: 5em 1em;
+}
+
+footer {
+	margin-top: 2em;
+}
