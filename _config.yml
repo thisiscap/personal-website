@@ -21,7 +21,7 @@ author: "Chris Porter"
 
 # Change this to your production URL
 # ============================================================
-url: "http://christopherporter.co.uk/main"
+url: "http://localhost:4000"
 
 # Publish future posts or not option.
 # ============================================================
