@@ -18,8 +18,58 @@ html {
 	font-feature-settings: "kern";
 	font-kerning: normal;
 	color: $main;
+	font-size: 20px;
 }
 
 em {
 	font-family: 'Cormorant-Italic', Georgia, serif;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+a {}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	display: table;
+	padding: 0;
+	
+}
+
+li {
+	
+}
+
+ul > li {
+	display: table-row;
+	list-style-type: none;
+}
+
+ul > li:before {
+	content: "–";
+    display: table-cell;
+	padding-right: 10px;
+}
+

@@ -2,14 +2,30 @@ header {
 	background: white;
 	position: fixed;
 	top: 0;
-	padding: 2em 0 2em;
+	left: 0;
+	padding: 20px;
 	width: 100%;
+	font-size: 1.5rem;
+}
+
+header em {
+	display: block;
 }
 
 body {
-	padding: 5em 1em;
+	padding: 6rem 1rem;
+}
+
+img {
+	width: 100vw;
+	margin-left: -1rem;
+}
+
+.links {
+	font-size: 1.5em;
+	padding: 40px 0 40px;
 }
 
 footer {
-	margin-top: 2em;
+	margin-top: 2rem;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Breakpoints
    ========================================================================== */
 /**
@@ -384,7 +385,7 @@ table {
 
 /* line 13, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 html {
-  font-family: 'Cormorant-Regular';
+  font-family: 'Cormorant-Regular', Georgia, serif;
   -webkit-font-variant-ligatures: common-ligatures;
   /* for iOS and Safari 6 */
   font-variant-ligatures: common-ligatures;
@@ -392,14 +393,76 @@ html {
   -webkit-font-feature-settings: "kern";
   font-feature-settings: "kern";
   font-kerning: normal;
-  color: #3f3f3f; }
+  color: #3f3f3f;
+  font-size: 20px; }
+
+/* line 24, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+em {
+  font-family: 'Cormorant-Italic', Georgia, serif; }
+
+/* line 28, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 100; }
+
+/* line 32, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+h1 {
+  font-size: 1.5em; }
+
+/* line 36, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+h2 {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+/* line 51, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 55, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+ul {
+  display: table;
+  padding: 0; }
+
+/* line 65, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+ul > li {
+  display: table-row;
+  list-style-type: none; }
+
+/* line 70, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+ul > li:before {
+  content: "–";
+  display: table-cell;
+  padding-right: 10px; }
 
 /* line 1, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 header {
-  padding: 1em; }
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.5rem; }
 
-/* line 5, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 11, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+header em {
+  display: block; }
+
+/* line 15, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 body {
-  padding: 1em; }
+  padding: 6rem 1rem; }
+
+/* line 19, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+img {
+  width: 100vw;
+  margin-left: -1rem; }
+
+/* line 24, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.links {
+  font-size: 1.5em;
+  padding: 40px 0 40px; }
+
+/* line 29, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+footer {
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
