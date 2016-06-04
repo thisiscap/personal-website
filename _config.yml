@@ -31,7 +31,7 @@ future: true
 # I normally exclude _sass, README*, and .gitignore
 # Directories that start with an underscore _ are not copied over by default. Still like to include _sass anyways.
 # ============================================================
-exclude: [README.md, Rakefile, node_modules]
+exclude: [README.md, Rakefile, node_modules, .editorconfig, .gitattributes, .gitignore]
 
 # Pagination variable for how many posts to show in a list
 # ============================================================
@@ -39,7 +39,7 @@ exclude: [README.md, Rakefile, node_modules]
 
 # Style of permalinks
 # ============================================================
-permalink: pretty
+permalink: :title
 
 # Variable format options for URL styles below
 # ============================================================

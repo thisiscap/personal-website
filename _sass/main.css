@@ -401,34 +401,35 @@ em {
   font-family: 'Cormorant-Italic', Georgia, serif; }
 
 /* line 28, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: 100; }
+h1, h2, h3, h4, h5, h6, p, span {
+  font-weight: 100;
+  max-width: 450px; }
 
-/* line 32, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 33, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 36, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 37, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h2 {
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 51, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 55, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-ul {
+/* line 56, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.list {
   display: table;
   padding: 0; }
 
-/* line 65, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-ul > li {
+/* line 62, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.list > li {
   display: table-row;
   list-style-type: none; }
 
-/* line 70, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-ul > li:before {
+/* line 67, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.list > li:before {
   content: "–";
   display: table-cell;
   padding-right: 10px; }
@@ -452,16 +453,38 @@ body {
   padding: 6rem 1rem; }
 
 /* line 19, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.case-studies {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap; }
+
+/* line 25, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.case-studies ul {
+  padding: 0; }
+
+/* line 29, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.case-studies li {
+  display: inline-block;
+  vertical-align: top;
+  width: 85%;
+  margin-right: 20px;
+  white-space: normal; }
+
+/* line 37, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.case-studies img {
+  width: 100%;
+  margin: 0; }
+
+/* line 42, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 img {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 24, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 47, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
-  font-size: 1.5em;
-  padding: 40px 0 40px; }
+  font-size: 1.5em; }
 
-/* line 29, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 51, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 

@@ -16,6 +16,29 @@ body {
 	padding: 6rem 1rem;
 }
 
+.case-studies {
+	width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.case-studies ul {
+	padding: 0;
+}
+
+.case-studies li {
+	display: inline-block;
+	vertical-align: top;
+    width: 85%;
+    margin-right: 20px;
+    white-space: normal;
+}
+
+.case-studies img {
+	width: 100%;
+	margin: 0;
+}
+
 img {
 	width: 100vw;
 	margin-left: -1rem;
@@ -23,7 +46,6 @@ img {
 
 .links {
 	font-size: 1.5em;
-	padding: 40px 0 40px;
 }
 
 footer {
