@@ -403,7 +403,7 @@ em {
 /* line 28, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h1, h2, h3, h4, h5, h6, p, span {
   font-weight: 100;
-  max-width: 450px; }
+  max-width: 600px; }
 
 /* line 33, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h1 {
@@ -467,24 +467,25 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 85%;
+  max-width: 800px;
   margin-right: 20px;
   white-space: normal; }
 
-/* line 37, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 38, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies img {
   width: 100%;
   margin: 0; }
 
-/* line 42, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 43, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 img {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 47, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 48, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
   font-size: 1.5em; }
 
-/* line 51, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 
