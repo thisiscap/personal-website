@@ -18,7 +18,9 @@ html {
 	font-feature-settings: "kern";
 	font-kerning: normal;
 	color: $main;
-	font-size: 20px;
+	font-size: 24px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 em {
@@ -47,10 +49,12 @@ h5 {}
 
 h6 {}
 
-a {}
+a {
+    text-decoration: none;
+}
 
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .list {

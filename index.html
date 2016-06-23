@@ -14,13 +14,21 @@ layout: default
 			{% if post.thumbnail %}
 			<img src="{{ post.thumbnail }}" alt="{{ post.alt }}"/>
 			{% else %}
-			<img src="/images/nothumbnail.jpg" alt="{{ post.alt }}"/>
+			<img src="/images/fallback.jpg" alt="{{ post.alt }}"/>
 			{% endif %}
 		</a>
 				<p>{{ post.title }} – <em>{{ post.subtitle }}</em></p>
 			</article>
 		</li>
 		{% endfor %}
+        <li>
+			<article>
+                <a href="mailto:hello@christopherporter.co.uk">
+			<img src="/img/fallback.jpg" alt="{{ post.alt }}"/>
+                </a>
+				<p>Get in touch – <em>If you'd like your project here</em></p>
+			</article>
+		</li>
 	</ul>
 </section>
 

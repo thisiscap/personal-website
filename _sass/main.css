@@ -13,7 +13,6 @@
 /* Medium Breakpoint */
 /* Type Scale - I always need a type-scale
    ========================================================================== */
-/* Colour scheme */
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -394,41 +393,47 @@ html {
   font-feature-settings: "kern";
   font-kerning: normal;
   color: #3f3f3f;
-  font-size: 20px; }
+  font-size: 24px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
-/* line 24, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 26, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 em {
   font-family: 'Cormorant-Italic', Georgia, serif; }
 
-/* line 28, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 30, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h1, h2, h3, h4, h5, h6, p, span {
   font-weight: 100;
   max-width: 600px; }
 
-/* line 33, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 35, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h1 {
   font-size: 1.5em; }
 
-/* line 37, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 39, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h2 {
   font-size: 1.2em;
   font-weight: 600; }
 
 /* line 52, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-a:hover {
+a {
   text-decoration: none; }
 
 /* line 56, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 60, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list {
   display: table;
   padding: 0; }
 
-/* line 62, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 66, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li {
   display: table-row;
   list-style-type: none; }
 
-/* line 67, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 71, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li:before {
   content: "–";
   display: table-cell;
@@ -445,24 +450,32 @@ header {
   font-size: 1.5rem; }
 
 /* line 11, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-header em {
-  display: block; }
+.scrolled {
+  transform: translateY(-100%); }
 
 /* line 15, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 body {
   padding: 6rem 1rem; }
 
 /* line 19, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+main {
+  columns: 2 400px;
+  column-gap: 2em; }
+  /* line 23, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  main h1, main h2 {
+    column-span: all; }
+
+/* line 28, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies {
   width: 100%;
   overflow: auto;
   white-space: nowrap; }
 
-/* line 25, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 34, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies ul {
   padding: 0; }
 
-/* line 29, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 38, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies li {
   display: inline-block;
   vertical-align: top;
@@ -471,21 +484,21 @@ body {
   margin-right: 20px;
   white-space: normal; }
 
-/* line 38, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 47, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies img {
   width: 100%;
   margin: 0; }
 
-/* line 43, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 img {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 48, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 57, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
   font-size: 1.5em; }
 
-/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 

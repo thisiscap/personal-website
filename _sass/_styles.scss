@@ -8,12 +8,21 @@ header {
 	font-size: 1.5rem;
 }
 
-header em {
-	display: block;
+.scrolled {
+  transform: translateY(-100%);
 }
 
 body {
 	padding: 6rem 1rem;
+}
+
+main {
+    columns: 2 400px;
+    column-gap: 2em;
+    
+    h1, h2 {
+        column-span: all;
+    }
 }
 
 .case-studies {

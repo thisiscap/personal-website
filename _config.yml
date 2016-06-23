@@ -9,7 +9,7 @@
 # This will be the first part of the title tag for your site
 # <title> {{site.name}} </title>
 # ============================================================
-name: "Chris Porter, Graphic Designer"
+name: "Chris Porter – Graphic Design for sustainable products, services and living"
 
 # Populates the meta description for the site. Should be under 150 characters for best SEO results.
 # ============================================================
