@@ -451,23 +451,24 @@ header {
 
 /* line 11, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .scrolled {
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+  transition: transform 0.5s ease; }
 
-/* line 15, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 16, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 body {
   padding: 6rem 1rem; }
 
-/* line 19, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 20, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies {
   width: 100%;
   overflow: auto;
   white-space: nowrap; }
 
-/* line 25, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 26, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies ul {
   padding: 0; }
 
-/* line 29, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 30, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies li {
   display: inline-block;
   vertical-align: top;
@@ -476,28 +477,28 @@ body {
   margin-right: 20px;
   white-space: normal; }
 
-/* line 38, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 39, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .case-studies img {
   width: 100%;
   margin: 0; }
 
-/* line 43, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 44, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .post-content {
   margin-left: 10%; }
-  /* line 45, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  /* line 46, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
   .post-content p {
     font-size: 1.2em; }
 
-/* line 51, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 img {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 56, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 57, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
   font-size: 1.5em; }
 
-/* line 60, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 

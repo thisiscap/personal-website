@@ -9,7 +9,8 @@ header {
 }
 
 .scrolled {
-  transform: translateY(-100%);
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
 }
 
 body {
