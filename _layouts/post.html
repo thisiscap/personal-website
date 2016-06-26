@@ -3,8 +3,12 @@
 	{% include _head.html %}
 <body>
     {% include _header.html %}
-	{{content}}
-	{% include _pagination.html %}
+    <main>
+    <article class="post-content">
+        {{content}}
+        {% include _post-list.html %}
+    </article>
+    </main>
 	{% include _links.html %}
 	{% include _footer.html %}
 </body>

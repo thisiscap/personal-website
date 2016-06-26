@@ -389,7 +389,7 @@ html {
   font-feature-settings: "kern";
   font-kerning: normal;
   color: #3f3f3f;
-  font-size: 20px;
+  font-size: 24px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
@@ -411,31 +411,55 @@ h2 {
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 48, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+h5 {
+  color: #8b8b8b; }
+
+/* line 54, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 a {
+  color: #0000e1;
   text-decoration: none; }
 
-/* line 56, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 59, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 a:hover {
   text-decoration: underline; }
 
-/* line 60, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 65, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list {
   display: table;
   padding: 0; }
 
-/* line 66, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 71, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.external::after {
+  content: "\2934";
+  margin-left: 0.25rem; }
+
+/* line 77, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li {
   display: table-row;
   list-style-type: none; }
 
-/* line 71, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 82, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li:before {
   content: "–";
   display: table-cell;
   padding-right: 10px; }
 
 /* line 1, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+::selection {
+  background: #0000e1;
+  color: white; }
+
+/* line 5, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+::-moz-selection {
+  background: #0000e1;
+  color: white; }
+
+/* line 10, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 14, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 header {
   background: white;
   position: fixed;
@@ -445,56 +469,59 @@ header {
   width: 100%;
   font-size: 1.5rem; }
 
-/* line 11, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.scrolled {
-  transform: translateY(-100%);
-  transition: transform 0.5s ease; }
-
-/* line 16, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 23, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 body {
   padding: 6rem 1rem; }
 
-/* line 20, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.case-studies {
+/* line 26, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.carousel {
   width: 100%;
   overflow: auto;
   white-space: nowrap; }
+  /* line 30, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .carousel ul {
+    padding: 0; }
+  /* line 33, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .carousel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 85%;
+    max-width: 800px;
+    margin-right: 20px;
+    white-space: normal; }
+  /* line 41, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .carousel img {
+    width: 100%;
+    margin: 0; }
 
-/* line 26, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.case-studies ul {
-  padding: 0; }
-
-/* line 30, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.case-studies li {
-  display: inline-block;
-  vertical-align: top;
-  width: 85%;
-  max-width: 800px;
-  margin-right: 20px;
-  white-space: normal; }
-
-/* line 39, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.case-studies img {
-  width: 100%;
-  margin: 0; }
-
-/* line 44, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.post-content {
-  margin-left: 10%; }
-  /* line 46, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-  .post-content p {
-    font-size: 1.2em; }
+/* line 47, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.post-list {
+  margin: 2rem 0;
+  padding: 0.5rem 0; }
 
 /* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-img {
+.bordered {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #f2f2f2; }
+
+/* line 58, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.post-content {
+  margin-left: 10%; }
+  /* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .post-content .carousel li {
+    max-width: 600px; }
+
+/* line 66, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.full-width {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 57, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 70, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
   font-size: 1.5em; }
 
-/* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 73, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 

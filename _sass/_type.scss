@@ -17,8 +17,8 @@ html {
 	-webkit-font-feature-settings: "kern";
 	font-feature-settings: "kern";
 	font-kerning: normal;
-	color: $main;
-	font-size: 20px;
+	color: $dark-grey;
+	font-size: 24px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -45,11 +45,14 @@ h3 {}
 
 h4 {}
 
-h5 {}
+h5 {
+    color: lighten($dark-grey, 30%);
+}
 
 h6 {}
 
 a {
+    color: $blue;
     text-decoration: none;
 }
 
@@ -57,11 +60,19 @@ a:hover {
 	text-decoration: underline;
 }
 
+a:visited {}
+
 .list {
 	display: table;
 	padding: 0;
 	
 }
+
+.external::after {
+    content: "\2934";
+    margin-left: 0.25rem;
+}
+
 
 .list > li {
 	display: table-row;

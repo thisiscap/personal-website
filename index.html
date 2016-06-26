@@ -5,7 +5,7 @@ layout: default
 	<h1>Helping people articulate themselves using thoughtful, insightful solutions.</h1>
 </main>
 
-<section class="case-studies">
+<section class="carousel" id="case-studies">
 	<ul>
 		{% for post in site.posts %}
 		<li>
@@ -14,7 +14,7 @@ layout: default
 			{% if post.thumbnail %}
 			<img src="{{ post.thumbnail }}" alt="{{ post.alt }}"/>
 			{% else %}
-			<img src="/images/fallback.jpg" alt="{{ post.alt }}"/>
+			<img src="/img/fallback.jpg" alt="{{ post.alt }}"/>
 			{% endif %}
 		</a>
 				<p>{{ post.title }} – <em>{{ post.subtitle }}</em></p>
