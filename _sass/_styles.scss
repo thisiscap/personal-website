@@ -19,6 +19,7 @@ header {
     padding: 20px;
     width: 100%;
     font-size: 1.5rem;
+    z-index: 1;
 }
 body {
     padding: 6rem 1rem;
@@ -56,13 +57,37 @@ body {
 }
 
 .post-content {
-    margin-left: 10%;
     .carousel {
         li {
             max-width: 600px;
         }
     }
+    @include medium {
+        margin-left: 10%;
+    }
 }
+
+// Structure
+
+// Elements
+
+.services {
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+    @include large {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div {
+        flex-grow: 1;
+        flex-basis: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
 .full-width {
     width: 100vw;
     margin-left: -1rem;

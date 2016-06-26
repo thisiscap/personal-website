@@ -1,14 +1,4 @@
 @charset "UTF-8";
-/**
- *
- * There are two breakpoints located in /_sass/_queries.scss
- * One for tablets, and one for desktops. NKD is mobile first.
- * This sets the range for those breakpoints.
- * Queries are meant to be extended as needed.
- *
- */
-/* Large Breakpoint */
-/* Medium Breakpoint */
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -380,11 +370,9 @@ table {
 
 /* line 13, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 html {
-  font-family: 'Cormorant-Regular', Georgia, serif;
+  font-family: "Cormorant-Regular", Georgia, serif;
   -webkit-font-variant-ligatures: common-ligatures;
-  /* for iOS and Safari 6 */
   font-variant-ligatures: common-ligatures;
-  /* for up-to-date browsers, including IE10 and Opera 21 */
   -webkit-font-feature-settings: "kern";
   font-feature-settings: "kern";
   font-kerning: normal;
@@ -395,10 +383,10 @@ html {
 
 /* line 26, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 em {
-  font-family: 'Cormorant-Italic', Georgia, serif; }
+  font-family: "Cormorant-Italic", Georgia, serif; }
 
 /* line 30, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, blockquote {
   font-weight: 100;
   max-width: 600px; }
 
@@ -408,38 +396,46 @@ h1 {
 
 /* line 39, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h2 {
-  font-size: 1.2em;
-  font-weight: 600; }
+  font-size: 1.25em; }
 
-/* line 48, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 43, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.subtitle {
+  font-size: 1rem;
+  font-family: "Cormorant-Italic", Georgia, serif;
+  color: #8b8b8b; }
+
+/* line 53, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 h5 {
   color: #8b8b8b; }
 
-/* line 54, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 59, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 a {
   color: #0000e1;
   text-decoration: none; }
 
-/* line 59, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 64, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 a:hover {
   text-decoration: underline; }
 
-/* line 65, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-.list {
-  display: table;
-  padding: 0; }
-
-/* line 71, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
-.external::after {
-  content: "\2934";
-  margin-left: 0.25rem; }
+/* line 70, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+blockquote {
+  margin: 0;
+  padding-left: 2rem;
+  border-left: solid #d3c19c 1px;
+  color: #d3c19c; }
 
 /* line 77, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+.list {
+  display: table;
+  padding: 0;
+  margin: 0; }
+
+/* line 84, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li {
   display: table-row;
   list-style-type: none; }
 
-/* line 82, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
+/* line 89, /Users/Chris/Documents/GitHub/main/_sass/_type.scss */
 .list > li:before {
   content: "–";
   display: table-cell;
@@ -467,21 +463,22 @@ header {
   left: 0;
   padding: 20px;
   width: 100%;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  z-index: 1; }
 
-/* line 23, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 24, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 body {
   padding: 6rem 1rem; }
 
-/* line 26, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 27, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .carousel {
   width: 100%;
   overflow: auto;
   white-space: nowrap; }
-  /* line 30, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  /* line 31, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
   .carousel ul {
     padding: 0; }
-  /* line 33, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  /* line 34, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
   .carousel li {
     display: inline-block;
     vertical-align: top;
@@ -489,39 +486,57 @@ body {
     max-width: 800px;
     margin-right: 20px;
     white-space: normal; }
-  /* line 41, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  /* line 42, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
   .carousel img {
     width: 100%;
     margin: 0; }
 
-/* line 47, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 48, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .post-list {
   margin: 2rem 0;
   padding: 0.5rem 0; }
 
-/* line 52, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 53, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .bordered {
   border-style: solid;
   border-width: 1px 0;
   border-color: #f2f2f2; }
 
-/* line 58, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-.post-content {
-  margin-left: 10%; }
-  /* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
-  .post-content .carousel li {
-    max-width: 600px; }
+/* line 61, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.post-content .carousel li {
+  max-width: 600px; }
 
-/* line 66, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+@media (min-width: 32em) {
+  /* line 59, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .post-content {
+    margin-left: 10%; } }
+
+/* line 75, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.services h2 {
+  margin-bottom: 0.5rem; }
+
+@media (min-width: 64em) {
+  /* line 74, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+  .services {
+    display: flex;
+    flex-wrap: wrap; } }
+
+/* line 82, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+.services div {
+  flex-grow: 1;
+  flex-basis: 50%;
+  margin-bottom: 2rem; }
+
+/* line 91, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .full-width {
   width: 100vw;
   margin-left: -1rem; }
 
-/* line 70, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 95, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 .links {
   font-size: 1.5em; }
 
-/* line 73, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
+/* line 98, /Users/Chris/Documents/GitHub/main/_sass/_styles.scss */
 footer {
   margin-top: 2rem; }
 

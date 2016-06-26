@@ -1,16 +1,11 @@
-@mixin breakpoint($viewport-width) {
-  @if $viewport-width == not-small {
-    @media screen
-       and (min-width:$MEDIUM-min-width) { @content; }
+@mixin medium {
+  @media (min-width: #{$medium-breakpoint}) {
+    @content;
   }
-  @else if $viewport-width == medium {
-    @media screen
-       and (min-width:$MEDIUM-min-width)
-       and (max-width:$MEDIUM-max-width)   { @content;
-      }
-  }
-  @else if $viewport-width == large {
-    @media screen
-       and (min-width:$LARGE-min-width) { @content; }
+}
+
+@mixin large {
+  @media (min-width: #{$large-breakpoint}) {
+    @content;
   }
 }

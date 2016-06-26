@@ -11,9 +11,9 @@
 }
 
 html {
-	font-family: 'Cormorant-Regular', Georgia, serif;
-	-webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
-	font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+	font-family: $font-stack-normal;
+	-webkit-font-variant-ligatures: common-ligatures;
+	font-variant-ligatures: common-ligatures;
 	-webkit-font-feature-settings: "kern";
 	font-feature-settings: "kern";
 	font-kerning: normal;
@@ -24,10 +24,10 @@ html {
 }
 
 em {
-	font-family: 'Cormorant-Italic', Georgia, serif;
+	font-family: $font-stack-italic;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, blockquote {
 	font-weight: 100;
 	max-width: 600px;
 }
@@ -37,8 +37,13 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
-	font-weight: 600;
+    font-size: 1.25em;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-family: $font-stack-italic;
+    color: lighten($dark-grey, 30%);
 }
 
 h3 {}
@@ -58,21 +63,23 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
+    }
 
 a:visited {}
+
+blockquote {
+    margin: 0;
+    padding-left: 2rem;
+    border-left: solid $taupe 1px;
+    color: $taupe;
+}
 
 .list {
 	display: table;
 	padding: 0;
+    margin: 0;
 	
 }
-
-.external::after {
-    content: "\2934";
-    margin-left: 0.25rem;
-}
-
 
 .list > li {
 	display: table-row;
