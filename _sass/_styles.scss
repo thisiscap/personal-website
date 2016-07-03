@@ -6,11 +6,23 @@
     background: $blue;
     color: white;
 }
-
+// Structure
 * {
     box-sizing: border-box;
 }
-
+body {
+    padding: 6rem 1rem;
+}
+.full-width {
+    width: 100vw;
+    margin-left: -1rem;
+}
+.bordered {
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: lighten($dark-grey, 70%);
+}
+// Elements
 header {
     background: white;
     position: fixed;
@@ -20,9 +32,6 @@ header {
     width: 100%;
     font-size: 1.5rem;
     z-index: 1;
-}
-body {
-    padding: 6rem 1rem;
 }
 .carousel {
     width: 100%;
@@ -40,37 +49,33 @@ body {
         white-space: normal;
     }
     img {
-    width: 100%;
-    margin: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 }
-}
-
-.post-list {
-    margin: 2rem 0;
-    padding: 0.5rem 0;
-}
-
-.bordered {
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: lighten($dark-grey, 70%);
-}
-
-.post-content {
+.content {
+    @include medium {
+        margin-left: 10%;
+    }
     .carousel {
         li {
             max-width: 600px;
         }
+        h5 {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
     }
-    @include medium {
-        margin-left: 10%;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        @include medium {
+            margin-left: -10%;
+        }
     }
 }
-
-// Structure
-
-// Elements
-
 .services {
     h2 {
         margin-bottom: 0.5rem;
@@ -85,12 +90,9 @@ body {
         margin-bottom: 2rem;
     }
 }
-
-
-
-.full-width {
-    width: 100vw;
-    margin-left: -1rem;
+.post-list {
+    margin: 2rem 0;
+    padding: 0.5rem 0;
 }
 .links {
     font-size: 1.5em;

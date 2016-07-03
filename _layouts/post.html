@@ -1,17 +1,15 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	{% include _head.html %}
-<body>
+<!DOCTYPE html>
+<html lang="en">
+{% include _head.html %}
+<body id="top">
     {% include _header.html %}
     <main>
-    <article class="post-content">
-        <h1>{{ page.short-title }} <span class="subtitle">| {{ page.subtitle }}</span></h1>
-        {{content}}
-        {% include _post-list.html %}
-    </article>
+        <article class="content">
+            <h1>{{ page.short-title }} <span class="subtitle">| {{ page.subtitle }}</span></h1> {{content}} {% include _post-list.html %}
+        </article>
     </main>
-	{% include _links.html %}
-	{% include _footer.html %}
+    {% include _links.html %}
+    {% include _footer.html %}
 </body>
-	{% include _scripts.html %}
+{% include _scripts.html %}
 </html>
