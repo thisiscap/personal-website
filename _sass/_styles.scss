@@ -58,24 +58,30 @@ header {
     @include medium {
         margin-left: 10%;
     }
+    h5, img {
+        margin-left: -10%;
+    }
     .carousel {
         li {
             max-width: 600px;
         }
-        h5 {
+        h5,img {
             margin-left: 0;
+        }
+        h5 {
             margin-bottom: 0;
         }
-    }
-    img {
+        img {
         width: 100%;
         height: auto;
-        max-width: 800px;
-        @include medium {
-            margin-left: -10%;
         }
     }
 }
+
+.content-image-wrapper {
+    
+}
+
 .services {
     h2 {
         margin-bottom: 0.5rem;
