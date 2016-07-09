@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Cormorant-Regular';
-    src: url('/cormorant/Cormorant-Regular.eot');
-    src: url('/cormorant/Cormorant-Regular.woff') format('woff');
+    src: url('/assets/cormorant/Cormorant-Regular.eot');
+    src: url('/assets/cormorant/Cormorant-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Cormorant-Italic';
-    src: url('/cormorant/Cormorant-Italic.eot');
-    src: url('/cormorant/Cormorant-Italic.woff') format('woff');
+    src: url('/assets/cormorant/Cormorant-Italic.eot');
+    src: url('/assets/cormorant/Cormorant-Italic.woff') format('woff');
 }
 html {
     font-family: $font-stack-normal;
