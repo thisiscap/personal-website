@@ -35,7 +35,10 @@ header {
 }
 .carousel {
     width: 100%;
-    overflow: scroll;
+    overflow: none;
+    overflow-x: none;
+    overflow-x: scroll;
+//    -webkit-overflow-scrolling: touch;
     white-space: nowrap;
     ul {
         padding: 0;
@@ -77,11 +80,6 @@ header {
         }
     }
 }
-
-.content-image-wrapper {
-    
-}
-
 .services {
     h2 {
         margin-bottom: 0.5rem;
