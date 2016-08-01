@@ -33,12 +33,15 @@ header {
     font-size: 1.5rem;
     z-index: 1;
 }
+img {
+    pointer-events: none;
+}
 .carousel {
     width: 100%;
     overflow: none;
     overflow-x: none;
     overflow-x: scroll;
-//    -webkit-overflow-scrolling: touch;
+    //-webkit-overflow-scrolling: touch;
     white-space: nowrap;
     ul {
         padding: 0;
