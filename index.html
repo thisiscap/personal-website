@@ -7,24 +7,24 @@ layout: default
 </main>
 
 <section class="carousel" id="case-studies">
-	<ul>
-		{% for post in site.posts %}
-		<li>
-			<article>
-				<a href="{{ BASE_PATH }}{{ post.url }}">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <article>
+                <a href="{{ BASE_PATH }}{{ post.url }}">
 			{% if post.thumbnail %}
 			<img src="{{ post.thumbnail }}" alt="{{ post.alt }}"/>
 			{% else %}
 			<img src="assets/img/fallback.jpg" alt="{{ post.alt }}"/>
 			{% endif %}
 		</a>
-				<p>{{ post.short-title }} – <em>{{ post.subtitle }}</em></p>
-			</article>
-		</li>
-		{% endfor %}
-	</ul>
+                <p>{{ post.short-title }} – <em>{{ post.subtitle }}</em></p>
+            </article>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
 
 <section class="links">
-	<p><a href="{{site.url}}/about">Find out more about me</a>, see <a href="{{site.url}}/services">what I can do for you</a> or <a href="mailto:hello@christopherporter.co.uk">get in touch</a></p>
+    <p><a href="{{site.url}}/about">Find out more about me</a>, see <a href="{{site.url}}/services">what I can do for you</a> or <a href="mailto:hello@christopherporter.co.uk">get in touch</a></p>
 </section>
