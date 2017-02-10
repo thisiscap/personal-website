@@ -91,11 +91,13 @@ img {
   }
   //Bump images out of line with text
   img:not(.emoji) {
-    margin-left: -$content-image-indent;
     display: block;
     width: 100%;
     max-width: calc(#{$content-body-width} + #{$content-image-indent});
     position: relative;
+    @include medium {
+      margin-left: -$content-image-indent;
+    }
   }
 }
 

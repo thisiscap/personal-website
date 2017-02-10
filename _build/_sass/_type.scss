@@ -122,14 +122,16 @@ a:visited {
     font-family: $font-stack-caption;
     font-size: 0.6em;
     color: lighten($dark-grey, 50%);
-    margin-left: calc(-1.7 * #{$content-image-indent});
+    @include medium {
+      margin-left: calc(-1.7 * #{$content-image-indent});
+    }
   }
 }
 
 // Unique to case studies (article)
 
 article.content {
-  //  First paragrph emphasis
+  //  First paragraph emphasis
   p:first-of-type {
     font-size: 1.14em;
   }
