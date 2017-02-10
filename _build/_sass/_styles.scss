@@ -1,0 +1,149 @@
+::selection {
+  background: $primary;
+  color: white;
+}
+::-moz-selection {
+  background: $primary;
+  color: white;
+}
+
+// Structure
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $primary;
+}
+
+body {
+  padding: 6rem 1rem;
+  margin: 0 0 0.5em;
+  background-color: $off-white;
+}
+
+// Media
+
+img {
+  pointer-events: none;
+}
+
+//Header headroom.js styles
+
+.headroom {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 0.8rem;
+  font-size: 1.5em;
+  will-change: transform;
+  transition: transform 200ms linear;
+  
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+//Delve in and review this at some point
+
+.carousel {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  ul {
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 85%;
+    max-width: 800px;
+    margin-right: 20px;
+    white-space: normal;
+  }
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+//Content (Class applies to multiple elements)
+
+.content {
+  @include medium {
+    margin-left: 10%;
+    padding-bottom: 3rem;
+  }
+  //Images inside <p>
+  p img:not(.emoji) {
+    @extend %inline-image;
+  }
+  //Bump images out of line with text
+  img:not(.emoji) {
+    margin-left: -$content-image-indent;
+    display: block;
+    width: 100%;
+    max-width: calc(#{$content-body-width} + #{$content-image-indent});
+    position: relative;
+  }
+}
+
+//About page
+
+.client-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  @include large {
+    column-count: 2;
+  }
+  li::before {
+    content: "\2014  ";
+    color: $primary;
+  }
+}
+
+//Services page
+
+.services {
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  @include large {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div {
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+.post-list {
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+}
+
+//CTA links
+
+.links {
+  font-size: 1.5em;
+}
+
+//Footer
+
+footer {
+  margin-top: 2rem;
+}

@@ -1,0 +1,16 @@
+<section class="carousel" id="case-studies">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <article>
+        <a href="{{ BASE_PATH }}{{ post.url }}">
+			{% if post.thumbnail-img %}
+			<img src="{{ post.thumbnail-img }}" alt="{{ post.thumbnail-img-alt }}"/>
+			{% endif %}
+		</a>
+        <p>{{ post.title }} {% if post.subtitle %} – <em>{{ post.subtitle }}</em> {% endif %}</p>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

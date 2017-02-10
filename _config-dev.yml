@@ -1,0 +1,9 @@
+name: "Chris Porter – Graphic Design for sustainable products, services and living"
+description: "Helping people articulate themselves using thoughtful, insightful solutions."
+author: "Chris Porter"
+url: "http://localhost:4000"
+exclude: [README.md, Rakefile, node_modules, .editorconfig, .gitattributes, .gitignore]
+#paginate: 5
+permalink: :title
+gems:
+  - jemoji

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include _head.html %}
+
 <body id="top">
-    {% include _header.html %}
-    <main>
-        <h1>{{ page.short-title }} <span class="subtitle">| {{ page.subtitle }}</span></h1>       
-        {{content}}
-    </main>
-    {% include _footer.html %}
+  {% include _header.html %}
+  <main>
+    <h1>{{ page.title }} {% if page.subtitle %} <span class="subtitle">| {{ page.subtitle }}</span>{% endif %}</h1>
+    {{content}}
+  </main>
+  {% include _footer.html %}
 </body>
 {% include _scripts.html %}
+
 </html>

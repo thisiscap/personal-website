@@ -1,0 +1,170 @@
+// Web fonts
+
+@font-face {
+  font-family: 'Cormorant-Regular';
+  src: url('/assets/cormorant/Cormorant-Regular.eot');
+  src: url('/assets/cormorant/Cormorant-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cormorant-Italic';
+  src: url('/assets/cormorant/Cormorant-Italic.eot');
+  src: url('/assets/cormorant/Cormorant-Italic.woff') format('woff');
+}
+
+html {
+  // Base styles
+  font-family: $font-stack-normal;
+  color: $dark-grey;
+  font-size: 24px;
+  // Ligatures, kerning, etc
+  font-kerning: normal;
+  // Nice rendering
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+em {
+  font-family: $font-stack-italic;
+}
+
+// Max widths for legibilty
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+blockquote {
+  font-weight: 100;
+  max-width: $content-body-width;
+}
+
+// Styling
+
+h1 {
+  font-size: 1.5em;
+  // Enable ligatures
+  font-variant-ligatures: discretionary-ligatures;
+}
+h2 {
+  font-size: 1.25em;
+}
+h5 {
+  color: lighten($dark-grey, 30%);
+}
+
+// Links
+
+a:link {
+  color: $primary;
+  text-decoration: none;
+  box-shadow: inset 0 -5px 0 transparent;
+  transition: box-shadow 0.5s;
+}
+a:hover {
+  box-shadow: inset 0 -15px 0 lighten($primary, 30%);
+}
+a:active,
+a:visited {
+  color: $primary;
+}
+
+// Links in content
+
+.content {
+  // Remove box shadow
+  a:link,
+  a:hover {
+    box-shadow: none;
+    transition: none;
+  }
+  a:link {
+    transition: color 1s;
+  }
+  a:hover {
+    color: darken($primary, 10%);
+    text-decoration: underline;
+  }
+  a:active,
+  a:visited {
+    color: darken($primary, 5%);
+  }
+}
+
+// Unique to content (Applies to multiple elements)
+
+.content {
+  //  Small cap headings with lines
+  h4 {
+    display: inline-block;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    position: relative;
+  }
+  h4::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    margin-left: 1em;
+    background-color: lighten($dark-grey, 70%);
+  }
+  //  Brings in paragraphs a little tighter
+  h4 + p {
+    margin-top: 0;
+  }
+  //  Captions for content area images
+  .image-caption {
+    font-family: $font-stack-caption;
+    font-size: 0.6em;
+    color: lighten($dark-grey, 50%);
+    margin-left: calc(-1.7 * #{$content-image-indent});
+  }
+}
+
+// Unique to case studies (article)
+
+article.content {
+  //  First paragrph emphasis
+  p:first-of-type {
+    font-size: 1.14em;
+  }
+}
+
+//SORT OUT AND REVIEW
+
+.list {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+.list > li {
+  display: table-row;
+  list-style-type: none;
+}
+.list > li:before {
+  content: "–";
+  display: table-cell;
+  padding-right: 10px;
+}
+.subtitle {
+  font-size: 1rem;
+  font-family: $font-stack-italic;
+  color: lighten($dark-grey, 30%);
+}
+.caption {
+  margin-top: 0.5rem;
+  @include medium {
+    margin-left: -10%;
+  }
+}
+
+// Footer
+
+footer {
+  font-size: 0.9em;
+}

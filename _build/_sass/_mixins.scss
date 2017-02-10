@@ -1,0 +1,54 @@
+//Mixins (Repeatable things that use variables)
+//Use like '@include size(pink, 10em)'
+
+/*
+//Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+//Background colour and font colour
+@mixin colors($background, $text) {
+  background-color: $background;
+  color: $text;
+}
+*/
+
+//Placeholders (Repeatable things that are fixed)
+//Use like '@extend %margin-auto;'
+
+//Margin auto 
+%margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Full width
+%full-width {
+  width: 100vw;
+  margin-left: -1rem;
+}
+
+//Display of images inline
+%inline-image {
+  max-width: 150px;
+  display: inline-block;
+  margin-right: 0.8em;
+  margin-bottom: 0.5em;
+  float: left;
+}
+
+/*
+//Media queries
+@mixin medium {
+  @media (min-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+*/

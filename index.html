@@ -1,30 +1,11 @@
 ---
 layout: default
 ---
-<main>
-    <h1>Crafting solutions to help others communicate and connect with audiences in meaningful ways.</h1>
-    <p>My name is Chris Porter, I’m a UK based designer who makes lovely work for causes and products related to sustainable living.</p>
-</main>
+<h1>Crafting solutions that communicate &amp; connect with audiences in meaningful ways.</h1>
+<p>UK based designer who works with sustainable causes, products and services.</p>
 
-<section class="carousel" id="case-studies">
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <article>
-                <a href="{{ BASE_PATH }}{{ post.url }}">
-			{% if post.thumbnail %}
-			<img src="{{ post.thumbnail }}" alt="{{ post.alt }}"/>
-			{% else %}
-			<img src="assets/img/fallback.jpg" alt="{{ post.alt }}"/>
-			{% endif %}
-		</a>
-                <p>{{ post.short-title }} – <em>{{ post.subtitle }}</em></p>
-            </article>
-        </li>
-        {% endfor %}
-    </ul>
-</section>
+{% include _case-study-carousel.html %}
 
 <section class="links">
-    <p><a href="{{site.url}}/about">Find out more about me</a>, see <a href="{{site.url}}/services">what I can do for you</a> or <a href="mailto:hello@christopherporter.co.uk">get in touch</a></p>
+  <p><a href="{{site.url}}/about">Find out more about me</a>, see <a href="{{site.url}}/services">what I can do for you</a> or <a href="mailto:{{ site.data.info.email }}">get in touch</a></p>
 </section>

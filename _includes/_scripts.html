@@ -1,3 +1,4 @@
+<!--Google analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,3 +9,20 @@
   ga('send', 'pageview');
 </script>
 
+<!--Lazy responsive image loading-->
+<!--<script async src="/assets/js/responsivelyLazy.min.js"></script>-->
+
+<script src="/assets/js/headroom.min.js"></script>
+
+<!--Headroom.js options-->
+<script>
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement, {
+  "offset": 50,
+  "tolerance": 5
+});
+// initialise
+headroom.init(); 
+</script>
