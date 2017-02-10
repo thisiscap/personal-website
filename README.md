@@ -1,5 +1,5 @@
-# Main
-Repo for my website, built on [Jekyll](http://jekyllrb.com)
+# My website
+My personal website, built on [Jekyll](http://jekyllrb.com)
 
 ## Mentions
 
